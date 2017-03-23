@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- server side include -->
+    <% include partials/page/head.ejs %>
+  </head>
+  <body class="<%= classname %>">
+    <% include partials/page/header.ejs %>
+   <div class="container">
+    <h1><%= pagetitle %>--<%= title %></h1>
+    <p>Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, 
+    vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim 
+    qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. 
+    Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod 
+    tincidunt ut laoreet dolore magna aliquam erat volutpat. </p>
+    
+    <% if (typeof(users) !== 'undefined' ) {%>
+        <ul>
+        <% for(var i = 0; i < users.length; i++){%>
+            <li><%= users[i] %></li>
+        <% } %>
+        </ul>
+    <% } %>
+    </dir> <!-- container -->
+        <% include partials/page/footer.ejs %>
+        <% include partials/page/jsdefaults.ejs %>
+    
+  
+  </body>
+</html>
+
+
+

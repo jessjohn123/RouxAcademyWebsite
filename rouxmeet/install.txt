@@ -1,0 +1,3 @@
+cd roux && npm install
+SET DEBUG=rouxmeet:* & npm start
+
